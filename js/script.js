@@ -7,7 +7,7 @@ const caixaAlternativas = document.querySelector(".caixa-alternativas");
 const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
 const botaoJogarNovamente = document.querySelector(".novamente-btn");
-const botaoIniciar = docukent.querySelector(".iniciar-btn");
+const botaoIniciar = document.querySelector(".iniciar-btn");
 const telaInicial = document.querySelector(".tela-inicial");
 
 let atual = 0; 
@@ -21,9 +21,9 @@ function iniciaJogo() {
     historiaFinal = "";
     telaInicial.style.display = 'none';
     caixaPerguntas.classList.remove("mostrar");
-    caixaAlternativas.classList.remove("mostrar);
+    caixaAlternativas.classList.remove("mostrar");
     caixaResultado.classList.remove("mostrar");
-    mostraPerguntas();
+    mostraPergunta();
 }
 
 function mostraPergunta() {
@@ -58,7 +58,7 @@ function mostraResultado(){
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
     caixaResultado.classList.add("mostrar");
-    botaoJogarNovamente.addEventListener("click", jogarNovmaente);
+    botaoJogarNovamente.addEventListener("click", jogarNovamente);
 }
 
 function jogarNovamente(){
