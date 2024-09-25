@@ -1,5 +1,5 @@
-import { aleatorio, nome } from "js/aleatorio.js";
-import { perguntas } from "js/perguntas.js";
+import {aleatorio, nome} from '.js/aleatorio.js"';
+import {perguntas} from '.js/perguntas.js';
 
 const caixaPrincipal = document.querySelector(".caixa-principal");
 const caixaPerguntas = document.querySelector(".caixa-perguntas");
@@ -14,7 +14,7 @@ let atual = 0;
 let perguntaAtual;
 let historiaFinal = "";
 
-botaoIniciar.addEventListener('click', iniciaJogo)
+botaoIniciar.addEventListener('click', iniciaJogo);
 
 function iniciaJogo() {
     atual = 0;
@@ -54,11 +54,11 @@ function respostaSelecionada(opcaoSelecionada){
 }
 
 function mostraResultado(){
-    caixaPerguntas.textContent = `Em 2049, ${nome}`
+    caixaPerguntas.textContent = `Em 2049, ${nome}`;
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
     caixaResultado.classList.add("mostrar");
-    botaoJogarNovamente.addEventListener("click",jogarNovmaente);
+    botaoJogarNovamente.addEventListener("click", jogarNovmaente);
 }
 
 function jogarNovamente(){
